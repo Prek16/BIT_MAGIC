@@ -1,0 +1,19 @@
+//User function Template for Java
+
+
+class Solution
+{
+    //Function to check if the number is sparse or not.
+    public static boolean isSparse(int n)
+    {
+        // Your code here
+         String s = Integer.toBinaryString(n);
+        for(int i = 0; i < s.length()-1; i++)
+        {
+            if(s.charAt(i) == '1' && s.charAt(i+1) == '1')
+            return false;
+        }
+        return true;
+    }
+    
+}
