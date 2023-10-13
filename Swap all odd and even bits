@@ -1,0 +1,16 @@
+//User function Template for Java
+
+class Solution
+{
+    //Function to swap odd and even bits.
+    public static int swapBits(int n) 
+    {
+	    // Your code
+	    int e=(n & 0xAAAAAAAA);
+	    int o=(n& 0x55555555);
+	    e>>=1;
+	    o<<=1;
+	    return(e|o);
+	}
+    
+}
