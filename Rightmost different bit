@@ -1,0 +1,19 @@
+
+
+//User function Template for Java
+
+class Solution
+{
+    //Function to find the first position with different bits.
+    public static int posOfRightMostDiffBit(int m, int n)
+    {if(m==n)
+    {
+    return -1;
+    }else
+    {
+        int diff=m^n;
+        diff=diff & -diff;
+        return (int) (Math.log(diff)/Math.log(2)+1);
+    }
+    }
+}
